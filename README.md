@@ -5,7 +5,7 @@ Just sharing my little changes to my BookStack
 
 Download the Zip Folder and import the database ads.sql provided (old Fashion way, i think its faster for me or you can do it the laravel way (I think it takes longer)
 
-First Let's create the database. 
+Skip this if you choose to import the sql file manually
 Create a migration to store the ads in the database:
 <pre><code>
 php artisan make:migration create_ads_table	
