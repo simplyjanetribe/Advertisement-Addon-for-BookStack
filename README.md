@@ -56,9 +56,13 @@ php artisan migrate
 </code></pre>
 
 ## Step 5: Create helpers for the ad output tags
-Exemple: You add the tag below to your blade to output the advertisement 
+Exemple: You add the tag below to any of your blades to output the advertisement whereever you want in your site.
 <pre><code>
-{{!! getAd('header_ad') !!}}
+{!! getAd('header_ad') !!}
+{!! getAd('sidebar_ad') !!}
+{!! getAd('show_ad_1') !!}
+{!! getAd('show_ad_2') !!}
+{!! getAd('footer_ad') !!}
 	</code></pre>
  
 Open Conposer.json and find 
