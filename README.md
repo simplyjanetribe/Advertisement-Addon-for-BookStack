@@ -1,8 +1,6 @@
 # Advertisement-Addon-for-BookStack
 A Simple little addon to add advertisement to your BookStack based website.
 
-COMING SOON... I WILL POST BookStack Reddit when is ready 
-
 Just sharing my little changes to my BookStack
 
 Download the Zip Folder and import the database ads.sql provided (old Fashion way, i think its faster for me or you can do it the laravel way (I think it takes longer)
@@ -97,3 +95,7 @@ and add the new menu
 </code></pre>
 
 visit your site https://yoursite.com/ads/create-ads and your will find more instructions there
+
+I hope your enjoy, if you would like to donate for this work you can go 
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif)]([https://www.paypal.com/donate/?business=paypal@poleguy.com](https://www.paypal.com/donate/?hosted_button_id=7VYMX9ZTVLF36)&no_recurring=0&item_name=Payment+for+Stackoverflow+Example&item_number=Suggested+Price:+$7.99+USD&currency_code=USD)
