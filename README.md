@@ -5,6 +5,50 @@ COMING SOON... I WILL POST BookStack Reddit when is ready
 
 Just sharing my little changes to my BookStack
 
+Download the Zip Folder and import the database ads.sql provided (old Fashion way, i think its faster for me or you can do it the laravel way (I think it takes longer)
+
+First Let's create the database. 
+Create a migration to store the ads in the database:
+<pre><code>
+php artisan make:migration create_ads_table	
+</code></pre>
+Then update the migration file (database/migrations/xxxx_xx_xx_xxxxxx_create_ads_table.php) as follows:
+
+<pre><code>
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateAdsTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('ads', function (Blueprint $table) {
+            $table->id();
+            $table->text('header_ad')->nullable();
+            $table->text('footer_ad')->nullable();
+            $table->text('sidebar_ad')->nullable();
+            $table->text('show_page_ad_1')->nullable();
+            $table->text('show_page_ad_2')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists('ads');
+    }
+}
+
+	
+</code></pre>
+
+Run the migration:
+<pre><code>
+php artisan migrate
+
+</code></pre>
+
 Open Conposer.json and find 
 <pre><code>
         "files": [
@@ -24,11 +68,19 @@ protected $routeMiddleware = [
 Open Route/web.php and add
 <pre><code>
 use BookStack\Ads\Controllers\AdsController;
-
 // Apply the middleware to the routes, checkRole:1 is admin only
 Route::group(['middleware' => ['checkRole:1']], function() {
     Route::get('/ads/create-ads', [AdsController::class, 'createAds'])->name('ads.ads');
     Route::post('ads/store-ads', [AdsController::class, 'storeAds'])->name('ads.storeAds');
+</code></pre>
+
+Run 
+<pre><code>
+php artisan cache:clear
+php artisan config:clear
+php artisan view:clear
+php artisan route:clear
+php artisan route:cache
 </code></pre>
 
 go to themes
