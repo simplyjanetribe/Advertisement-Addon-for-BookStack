@@ -55,7 +55,12 @@ php artisan migrate
 
 </code></pre>
 
-## Step 5: Create helped for the ad output tags
+## Step 5: Create helpers for the ad output tags
+Exemple: You add the tag below to your blade to output the advertisement 
+<pre><code>
+{{!! getAd('header_ad') !!}}
+	</code></pre>
+ 
 Open Conposer.json and find 
 <pre><code>
         "files": [
