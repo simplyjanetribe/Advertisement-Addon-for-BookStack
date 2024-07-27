@@ -95,7 +95,7 @@ and add the new menu
  Please replace the ? before the a href with < because I don't really know how to edit in github yet
 
 <pre><code>
- ```php
+ 
 @if(!user()->isGuest() && userCan('users-manage') && !userCan('settings-manage'))
     ?a href="{{ url('/ads/create-ads') }}"
        data-shortcut="settings_view">@icon('users'){{ trans('settings.users') }}</a>
