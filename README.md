@@ -89,10 +89,11 @@ themes/YourTheme/layouts/parts/header-links-start.blade.php
 and add the new menu 
  I did it like this 
 <pre><code>
-  @if(!user()->isGuest() && userCan('users-manage') && !userCan('settings-manage'))
-        <a href="{{ url('/ads/create-ads') }}"
-           data-shortcut="settings_view">@icon('users'){{ trans('settings.users') }}</a>
-    @endif
+ ```php
+@if(!user()->isGuest() && userCan('users-manage') && !userCan('settings-manage'))
+    <a href="{{ url('/ads/create-ads') }}"
+       data-shortcut="settings_view">@icon('users'){{ trans('settings.users') }}</a>
+@endif
 </code></pre>
 
 visit your site https://yoursite.com/ads/create-ads and your will find more instructions there
