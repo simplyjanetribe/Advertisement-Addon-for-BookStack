@@ -5,7 +5,7 @@ A Simple little addon to add advertisement to your BookStack based website.
 Just sharing my little changes to my BookStack
 ![screenshot](screenshot.png)
 
-#Installation
+##Installation
 Download the Zip Folder and import the database ads.sql provided (old Fashion way, i think its faster for me or you can do it the laravel way (I think it takes longer)
 
 Skip this if you choose to import the sql file manually
