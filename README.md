@@ -56,7 +56,7 @@ php artisan migrate
 </code></pre>
 
 ## Step 5: Create helpers for the ad output tags
-Exemple: You add the tag below to any of your blades to output the advertisement whereever you want in your site.
+Exemple: You add the tags below to any of your blades to output the advertisement whereever you want in your site.
 <pre><code>
 {!! getAd('header_ad') !!}
 {!! getAd('sidebar_ad') !!}
