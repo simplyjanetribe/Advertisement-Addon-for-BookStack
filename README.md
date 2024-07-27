@@ -95,7 +95,7 @@ and add the new menu
 <pre><code>
  ```php
 @if(!user()->isGuest() && userCan('users-manage') && !userCan('settings-manage'))
-    <a/ href="{{ url('/ads/create-ads') }}"
+    ?a href="{{ url('/ads/create-ads') }}"
        data-shortcut="settings_view">@icon('users'){{ trans('settings.users') }}</a>
 @endif
 </code></pre>
