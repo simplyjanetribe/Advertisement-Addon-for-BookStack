@@ -1,4 +1,5 @@
 # Advertisement-Addon-for-BookStack
+## Description
 A Simple little addon to add advertisement to your BookStack based website.
 
 Just sharing my little changes to my BookStack
@@ -88,6 +89,7 @@ or
 themes/YourTheme/layouts/parts/header-links-start.blade.php 
 and add the new menu 
  I did it like this 
+ ## Code Example
 <pre><code>
  ```php
 @if(!user()->isGuest() && userCan('users-manage') && !userCan('settings-manage'))
