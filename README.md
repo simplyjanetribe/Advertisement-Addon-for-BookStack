@@ -96,6 +96,6 @@ and add the new menu
 
 visit your site https://yoursite.com/ads/create-ads and your will find more instructions there
 
-I hope your enjoy, if you would like to donate for this work you can go 
+I hope your enjoy, if you would like to donate for this work you can https://www.paypal.com/donate/?hosted_button_id=7VYMX9ZTVLF36
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif)]([https://www.paypal.com/donate/?business=paypal@poleguy.com](https://www.paypal.com/donate/?hosted_button_id=7VYMX9ZTVLF36)&no_recurring=0&item_name=Payment+for+Stackoverflow+Example&item_number=Suggested+Price:+$7.99+USD&currency_code=USD)
+
