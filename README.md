@@ -1,6 +1,6 @@
 # Advertisement-Addon-for-BookStack
 A Simple little addon to add advertisement to your BookStack based website.
-wait 5 minutes, because I missed a step
+
 Just sharing my little changes to my BookStack
 ![screenshot](screenshot.png)
 Download the Zip Folder and import the database ads.sql provided (old Fashion way, i think its faster for me or you can do it the laravel way (I think it takes longer)
@@ -46,6 +46,17 @@ Run the migration:
 php artisan migrate
 
 </code></pre>
+
+
+Open App/Http/Kernel.php  and add
+<pre><code>
+	protected $routeMiddleware = [
+    // other middlewares
+    'checkRole' => \BookStack\Http\Middleware\CheckRole::class,
+
+];
+</code></pre>
+
 
 Open Conposer.json and find 
 <pre><code>
