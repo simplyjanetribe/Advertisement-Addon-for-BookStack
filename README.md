@@ -6,8 +6,13 @@ Just sharing my little changes to my BookStack
 ![screenshot](screenshot.png)
 
 ## Installation
-Download the Zip Folder and import the database ads.sql provided (old Fashion way, i think its faster for me or you can do it the laravel way (I think it takes longer)
 
+## Step 1: Let's Upload the files first
+Download the Zip Folder and upload the files following bookstack file structure,
+## Step 2 Skip this if following Step 3
+import the database ads.sql provided inside the zip folder (old Fashion way, I think its faster for me or you can do it the laravel way (I think it takes longer)
+
+## Step 3: Skip this if following step  2
 Skip this if you choose to import the sql file manually
 Create a migration to store the ads in the database:
 <pre><code>
@@ -43,14 +48,14 @@ class CreateAdsTable extends Migration
 
 	
 </code></pre>
-
+## Step 4
 Run the migration:
 <pre><code>
 php artisan migrate
 
 </code></pre>
 
-
+## Step 5: Create helped for the ad output tags
 Open Conposer.json and find 
 <pre><code>
         "files": [
@@ -58,6 +63,7 @@ Open Conposer.json and find
 			//Add this line "app/Ads/Helpers/AdHelper.php"
         ]
 </code></pre>
+## Step 6: Make sure only admin can visit the Create Ads page
 Open App/Http/Kernel.php  and add
 
 <pre><code>
@@ -66,7 +72,7 @@ protected $routeMiddleware = [
     'checkRole' => \BookStack\Http\Middleware\CheckRole::class,
 ];
 </code></pre>
-
+## Step 7: Adding Routes
 Open Route/web.php and add
 <pre><code>
 use BookStack\Ads\Controllers\AdsController;
@@ -75,7 +81,7 @@ Route::group(['middleware' => ['checkRole:1']], function() {
     Route::get('/ads/create-ads', [AdsController::class, 'createAds'])->name('ads.ads');
     Route::post('ads/store-ads', [AdsController::class, 'storeAds'])->name('ads.storeAds');
 </code></pre>
-
+## Step 8: Artisan Clear and Cache
 Run 
 <pre><code>
 php artisan cache:clear
@@ -84,7 +90,7 @@ php artisan view:clear
 php artisan route:clear
 php artisan route:cache
 </code></pre>
-
+## Step 9: Add link to menu
 go to themes
 resources/views/layouts/parts/header-links-start.blade.php
 or 
@@ -101,7 +107,7 @@ and add the new menu
        data-shortcut="settings_view">@icon('users'){{ trans('settings.users') }}</a>
 @endif
 </code></pre>
-
+## Step 10: Visit you site and happy advertising
 visit your site https://yoursite.com/ads/create-ads and your will find more instructions there
 
 I hope your enjoy, if you would like to donate for this work you can 
