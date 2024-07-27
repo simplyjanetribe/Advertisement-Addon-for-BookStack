@@ -104,6 +104,12 @@ and add the new menu
 
 visit your site https://yoursite.com/ads/create-ads and your will find more instructions there
 
-I hope your enjoy, if you would like to donate for this work you can https://www.paypal.com/donate/?hosted_button_id=7VYMX9ZTVLF36
+I hope your enjoy, if you would like to donate for this work you can 
 
+
+[
+  ![Donate with PayPal]
+  (https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png)
+]
+([https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QT54MSJR6QU7Y](https://www.paypal.com/donate/?hosted_button_id=7VYMX9ZTVLF36))
 
