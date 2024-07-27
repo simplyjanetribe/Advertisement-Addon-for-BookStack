@@ -2,7 +2,7 @@
 ## Description
 A Simple little addon to add advertisement to your BookStack based website.
 
-Just sharing my little changes to my BookStack
+Just sharing my little changes to my BookStack, anyone is welcome to improve it. use it as you want it. I got it for free, I give it for free with not limitations.
 ![screenshot](screenshot.png)
 
 ## Installation
