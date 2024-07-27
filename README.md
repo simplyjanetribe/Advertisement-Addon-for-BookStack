@@ -48,16 +48,6 @@ php artisan migrate
 </code></pre>
 
 
-Open App/Http/Kernel.php  and add
-<pre><code>
-	protected $routeMiddleware = [
-    // other middlewares
-    'checkRole' => \BookStack\Http\Middleware\CheckRole::class,
-
-];
-</code></pre>
-
-
 Open Conposer.json and find 
 <pre><code>
         "files": [
@@ -65,7 +55,7 @@ Open Conposer.json and find
 			//Add this line "app/Ads/Helpers/AdHelper.php"
         ]
 </code></pre>
-Open Kernel and Add
+Open App/Http/Kernel.php  and add
 
 <pre><code>
 protected $routeMiddleware = [
