@@ -1,7 +1,7 @@
 # Advertisement-Addon-for-BookStack
 ## Description
 A Simple little addon to add advertisement to your BookStack based website. this is a addon for BookStack located at <a href="
-https://github.com/BookStackApp/BookStack>BookStack Git</a>
+https://github.com/BookStackApp/BookStack">BookStack Git</a>
 Just sharing my little changes to my BookStack, anyone is welcome to improve it. use it as you want it. I got it for free, I give it for free with not limitations.
 ![screenshot](screenshot.png)
 
